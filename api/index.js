@@ -3,6 +3,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import pool from "./configs/dbConfigs.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
+import router from "./routes/routes.js";
 
 //Create app
 const app = express();
@@ -53,3 +55,9 @@ app.get("/api/test", (req, res) => {
     message: "Test working",
   });
 });
+
+// Route Level Middleware
+app.use('/api', router);
+
+// Error Level Middleware
+app.use(errorHandler);

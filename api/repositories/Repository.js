@@ -70,9 +70,9 @@ class Repository {
 
       const query = `SELECT * FROM ${this.tableName} WHERE ${conditions} LIMIT 1`;
 
-      const result = await pool.query(query, values);
+      const result = await pool.query(query, values);      
 
-      return result.rows[0];
+      return result.rows[0] || null;
     } catch (error) {
       console.error(`Error in findOne for ${this.tableName}:`, error);
       throw error;
