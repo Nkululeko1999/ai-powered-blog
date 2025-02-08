@@ -1,14 +1,17 @@
 import React from 'react'
 import Header from '../components/Header'
 import backgroundImage from "../assets/hero.jpg";
+import BlogList from '../components/BlogList';
 
 function Home() {
     return (
         <section className="home">
             <Header />
 
-            {/* Hero */}
+            
             <div className="max-w-[1500px] mx-auto mt-10 lg:mt-14 px-4 sm:px-6 lg:px-8 py-2">
+                {/* Hero */}
+
                 <div className="hero h-72 sm:h-80 lg:h-[400px] bg-gray-400 rounded-2xl relative" 
                     style={{ backgroundImage: `url(${backgroundImage})` }}>
 
@@ -23,7 +26,14 @@ function Home() {
                         </button>
                     </div>
                 </div>
+
+                {/* Blog List */}
+            <div>
+                <BlogList />
             </div>
+            </div>
+
+            
         </section>
     )
 }

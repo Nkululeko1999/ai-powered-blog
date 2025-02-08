@@ -9,7 +9,7 @@ function Header() {
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
                         <Link to="/" className="block text-2xl font-bold text-blue-800">
-                            Teckblog
+                            Tekblog
                         </Link>
                     </div>
 
@@ -20,11 +20,11 @@ function Header() {
                                     <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> About </Link>
+                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Blogs </Link>
                                 </li>
 
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Contact </Link>
+                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> About </Link>
                                 </li>
 
                                 <li>
