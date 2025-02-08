@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import pool from "./configs/dbConfigs.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
-import router from "./routes/routes.js";
+import auth_router from "./routes/authRoutes.js";
 
 //Create app
 const app = express();
@@ -57,7 +57,7 @@ app.get("/api/test", (req, res) => {
 });
 
 // Route Level Middleware
-app.use('/api', router);
+app.use('/api/auth', auth_router);
 
 // Error Level Middleware
 app.use(errorHandler);
