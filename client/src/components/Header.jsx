@@ -17,10 +17,10 @@ function Header() {
                         <nav aria-label="Global">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Home </Link>
+                                    <Link to="/" className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Home </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Blogs </Link>
+                                    <Link to="/blogs" className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> Blogs </Link>
                                 </li>
 
                                 <li>
