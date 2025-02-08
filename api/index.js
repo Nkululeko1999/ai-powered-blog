@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import pool from "./configs/dbConfigs.js";
 import { errorHandler } from "./middlewares/errorHandler.js";
 import auth_router from "./routes/authRoutes.js";
+import cookieParser from "cookie-parser";
+import category_router from "./routes/categoryRoutes.js";
 
 //Create app
 const app = express();
@@ -28,6 +30,7 @@ app.use(
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 //Establish database connection first before starting the server
 const connect = async () => {
@@ -58,6 +61,7 @@ app.get("/api/test", (req, res) => {
 
 // Route Level Middleware
 app.use('/api/auth', auth_router);
+app.use('/api/category', category_router);
 
 // Error Level Middleware
 app.use(errorHandler);
