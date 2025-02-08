@@ -71,7 +71,7 @@ const About = () => {
             ].map((item, index) => (
               <li
                 key={index}
-                className="bg-white shadow-md p-6 rounded-md hover:shadow-lg transition duration-300"
+                className="bg-white border-l-4 border-indigo-900 shadow-md p-6 rounded-md hover:shadow-lg transition duration-300"
               >
                 <p className="text-gray-700">{item}</p>
               </li>
