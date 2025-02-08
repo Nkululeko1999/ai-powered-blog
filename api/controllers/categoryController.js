@@ -22,3 +22,12 @@ export const createCategoryController = async (req, res, next) => {
     return next(error);
   }
 };
+
+export const getAllCategoriesController = async (req, res, next) => {
+    try {
+      const categories = await categoryRepository.findAll();
+      return res.status(200).json({ success: true, data: categories });
+    } catch (error) {
+      return next(error);
+    }
+  };
