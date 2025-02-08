@@ -4,7 +4,7 @@ import { TfiMenu } from "react-icons/tfi";
 
 function Header() {
     return (
-        <header className="bg-white shadow-lg">
+        <header className="bg-white shadow-all">
             <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-6 py-2">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
@@ -24,7 +24,7 @@ function Header() {
                                 </li>
 
                                 <li>
-                                    <Link className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> About </Link>
+                                    <Link to="/about" className="text-gray-500 transition hover:text-blue-800 text-base font-semibold"> About </Link>
                                 </li>
 
                                 <li>
