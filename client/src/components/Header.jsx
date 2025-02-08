@@ -40,7 +40,7 @@ function Header() {
 
                     <div className="flex items-center gap-4">
                         <div className="sm:flex sm:gap-4">
-                            <Link
+                            <Link to="/login"
                                 className="rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
                                
                             >
