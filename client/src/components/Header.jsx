@@ -42,7 +42,7 @@ function Header() {
                         <div className="sm:flex sm:gap-4">
                             <Link to="/login"
                                 className="rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
-                               
+
                             >
                                 Login
                             </Link>
@@ -50,7 +50,7 @@ function Header() {
                             <div className="hidden sm:flex">
                                 <Link to="/register"
                                     className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-600"
-                                   
+
                                 >
                                     Register
                                 </Link>
