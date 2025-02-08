@@ -2,7 +2,7 @@ import React from 'react'
 
 function Blog({ image, title, date, views, likes, reviews }) {
     return (
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-indigo-300">
+        <div className="bg-white rounded-lg shadow-all overflow-hidden cursor-pointer hover:shadow-indigo-300">
             <img src={image} alt={title} className="w-full h-64 object-cover" />
             <div className="p-6">
                 <h2 className="text-2xl font-semibold text-gray-800">
