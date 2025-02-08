@@ -7,6 +7,7 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 import auth_router from "./routes/authRoutes.js";
 import cookieParser from "cookie-parser";
 import category_router from "./routes/categoryRoutes.js";
+import blog_router from "./routes/blogRoutes.js";
 
 //Create app
 const app = express();
@@ -62,6 +63,7 @@ app.get("/api/test", (req, res) => {
 // Route Level Middleware
 app.use('/api/auth', auth_router);
 app.use('/api/category', category_router);
+app.use('/api/blog', blog_router);
 
 // Error Level Middleware
 app.use(errorHandler);
